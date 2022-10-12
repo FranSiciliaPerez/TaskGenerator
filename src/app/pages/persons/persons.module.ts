@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PersonsPageRoutingModule } from './persons-routing.module';
 
 import { PersonsPage } from './persons.page';
+import { PeopleComponentModule } from 'src/app/components/people/people/people.module';
 
 @NgModule({
   imports: [

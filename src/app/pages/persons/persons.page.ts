@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Persons } from 'src/app/models/persons.models';
 import { ActivatedRoute } from '@angular/router';
-import { DataPersonService } from 'src/app/services/dataperson.service';
+import { Persons } from 'src/app/models/persons.models';
+import { DataPersonsService } from 'src/app/services/dataperson.service';
 
 @Component({
   selector: 'app-persons',
@@ -10,14 +10,16 @@ import { DataPersonService } from 'src/app/services/dataperson.service';
 })
 export class PersonsPage {
 
-  public person:Persons[]; 
-    constructor(
-      private dataPersons:DataPersonService,
-      private activatedRoute : ActivatedRoute
+  public person: Persons[];
+  constructor(
+    private dataPersons: DataPersonsService,
+    private activatedRoute: ActivatedRoute
   ) { }
+  
   ngOnInit() {
   }
-  getPersons(){
-    return this.dataPersons.getPersons(); 
+  
+  getPersons() {
+    return this.dataPersons.getPersons();
   }
 }

@@ -4,7 +4,7 @@ import { Persons} from '../models/persons.models';
 @Injectable({
   providedIn: 'root'
 })
-export class DataPersonService {
+export class DataPersonsService {
   persons:Persons[] = [
     {
       personid: 0,

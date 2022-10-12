@@ -12,7 +12,8 @@
     </p>
     <ion-grid>
       <ion-row class="ion-align-items-center">
-        <ion-col >
+        <ion-col *ngFor="let p of getPersons()" size="9" size-sm="3" class="ion-align-self-center">
+          <app-people [p]="person"></app-people>
         </ion-col>
       </ion-row>
     </ion-grid>
