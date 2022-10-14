@@ -5,17 +5,14 @@
 </ion-header>
 
 <ion-content>
-  <div id="container">
-    <h1>Francisco Javier Sicilia Pérez</h1>
-    <p>
-      <ion-button [routerLink]="['../home']">Home</ion-button>
-    </p>
     <ion-grid>
       <ion-row class="ion-align-items-center">
-        <ion-col *ngFor="let p of getPersons()" size="9" size-sm="3" class="ion-align-self-center">
-          <app-people [p]="person"></app-people>
+        <ion-col *ngFor="let p of getPersons()" size="6" size-sm="3" class="ion-align-self-center">
+          <app-persons [person]="p"></app-persons>
         </ion-col>
       </ion-row>
     </ion-grid>
-  </div>
+    <p>
+      <ion-button [routerLink]="['../home']">Home</ion-button>
+    </p>
 </ion-content>

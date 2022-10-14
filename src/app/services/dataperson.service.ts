@@ -8,21 +8,20 @@ export class DataPersonsService {
   persons:Persons[] = [
     {
       personid: 0,
-      name: 'Jose Antonio',
-      nickname:  'Hijo mayor',
+      name: 'Irene',
+      nickname:  'Irenilla'
     },
     {
       personid: 1,
-      name: 'Jose Antonio',
-      nickname:  'Hijo mayor',
+      name: 'Francisco',
+      nickname:  'Franck'
     },
     {
       personid: 2,
-      name: 'Jose Antonio',
-      nickname:  'Hijo mayor',
+      name: 'Irene',
+      nickname:  'Irenilla'
     }
   ]
-  snapshot: any;
   constructor() { }
 
   public getPersons(): Persons[]{
