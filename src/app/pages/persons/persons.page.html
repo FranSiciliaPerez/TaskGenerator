@@ -8,7 +8,7 @@
     <ion-grid>
       <ion-row class="ion-align-items-center">
         <ion-col *ngFor="let p of getPersons()" size="6" size-sm="3" class="ion-align-self-center">
-          <app-persons [person]="p"></app-persons>
+          <app-persons [person]="p" (onEdit)="onEditPerson($event)"(onDelete)="onDeletePerson($event)" ></app-persons>
         </ion-col>
       </ion-row>
     </ion-grid>

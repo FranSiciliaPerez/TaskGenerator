@@ -9,27 +9,49 @@ export class DataPersonsService {
     {
       personid: 0,
       name: 'Irene',
-      nickname:  'Irenilla'
+      nickname:  'Irenilla',
+      surname:'Perez'
     },
     {
       personid: 1,
       name: 'Francisco',
-      nickname:  'Franck'
+      nickname: 'Franck',
+      surname: 'Siclia'
     },
     {
       personid: 2,
       name: 'Irene',
-      nickname:  'Irenilla'
+      nickname:  'Irenilla',
+      surname:'Ortega'
     }
   ]
+  personid:number = this.persons.length+1;
   constructor() { }
 
-  public getPersons(): Persons[]{
+  getPersons(){
     return this.persons;
   }
   
-  public getPersonsById(personid:number): Persons{
-    return this.persons[personid];
+  getPersonsById(personid:number){
+    return this.persons.find(p=>p.personid==personid);
+  }
+
+  deletePersonsById(personid:number){
+    this.persons = this.persons.filter(p=>p.personid != personid); 
+  }
+  addPerson(person:Persons){
+    person.personid = this.personid++;
+    this.persons.push(person);
+  }
+
+  updatePerson(person:Persons){
+    var _person = this.persons.find(p=>p.personid==person.personid);
+    if(_person){
+      _person.name = person.name;
+      _person.nickname = person.nickname;
+      _person.surname = person.surname;
+      //_person.image = person.image;
+    }
   }
 }
 
