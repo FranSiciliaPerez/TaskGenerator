@@ -10,19 +10,22 @@ export class DataPersonsService {
       personid: 0,
       name: 'Irene',
       nickname:  'Irenilla',
-      surname:'Perez'
+      surname:'Perez',
+      image: ''
     },
     {
       personid: 1,
       name: 'Francisco',
       nickname: 'Franck',
-      surname: 'Siclia'
+      surname: 'Siclia',
+      image: ''
     },
     {
       personid: 2,
       name: 'Irene',
       nickname:  'Irenilla',
-      surname:'Ortega'
+      surname:'Ortega',
+      image: ''
     }
   ]
   personid:number = this.persons.length+1;
@@ -50,7 +53,7 @@ export class DataPersonsService {
       _person.name = person.name;
       _person.nickname = person.nickname;
       _person.surname = person.surname;
-      //_person.image = person.image;
+      _person.image = person.image;
     }
   }
 }
