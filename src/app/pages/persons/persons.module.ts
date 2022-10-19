@@ -16,6 +16,7 @@ import { PeopleComponent } from './components/people/people.component';
     IonicModule,
     PersonsPageRoutingModule
   ],
-  declarations: [PersonsPage, PeopleComponent]
+  declarations: [PersonsPage, PeopleComponent],
+  exports: [PeopleComponent]
 })
 export class PersonsPageModule {}

@@ -1,6 +1,5 @@
 
 import { Component, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { AlertController, ModalController } from '@ionic/angular';
 import { Persons } from 'src/app/models/persons.models';
 import { DataPersonsService } from 'src/app/services/dataperson.service';
@@ -15,7 +14,6 @@ export class PersonsPage {
   public person:Persons[];
   constructor(
     private dataPersons: DataPersonsService,
-    private activatedRoute: ActivatedRoute,
     private alert:AlertController,
     private modal: ModalController,
     private personService:DataPersonsService
