@@ -31,8 +31,8 @@ export class PersonsDetailsComponent implements OnInit {
       personid:[null],
       name:['', [Validators.required]],
       nickname:['', [Validators.required]],
-      surname:['', [Validators.required]]
-      //picture:['']
+      surname:['', [Validators.required]],
+      picture:['']
     });
   }
 
