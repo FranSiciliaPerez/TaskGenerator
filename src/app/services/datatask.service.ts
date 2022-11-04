@@ -8,22 +8,22 @@ export class DatataskService {
   tasks:Tasks[] = [
     {
       taskid: 0,
-      name: 'Irene',
-      description: 'Hola cara cola',
+      name: 'Fregar',
+      description: 'Fregar cocina y baños',
       dataTimeSeg: 230023,
       image: ''
     },
     {
       taskid: 1,
-      name: 'Irene',
-      description: 'fdsffsdfsd',
-      dataTimeSeg:333443,
+      name: 'Barrer',
+      description: 'Barrer salon y cuartos',
+      dataTimeSeg: 333443,
       image: ''
     },
     {
       taskid: 2,
-      name: 'Irene',
-      description: 'dfhgdhfgvbdf',
+      name: 'Aspirar',
+      description: 'Aspirar el polvo de la casa',
       dataTimeSeg: 343443,
       image: ''
     }
