@@ -10,7 +10,7 @@
 <ion-content>
     <ion-grid>
       <ion-row class="ion-align-items-center">
-        <ion-col *ngFor="let p of getTask()" size="6" size-sm="3" class="ion-align-self-center">
+        <ion-col *ngFor="let p of getTask()" size="6"  size-sm="3" class="ion-align-self-center">
           <app-task [task]="p" (onEdit)="onEditTask($event)"(onDelete)="onDeleteTask($event)" ></app-task>
         </ion-col>
       </ion-row>
