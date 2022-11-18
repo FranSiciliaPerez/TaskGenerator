@@ -3,5 +3,5 @@ export interface Assign{
     personid:number;
     taskid:number;
     createdAt:string;
-    dataTimeSeg:string;
+    dateNTime:string;
 }
