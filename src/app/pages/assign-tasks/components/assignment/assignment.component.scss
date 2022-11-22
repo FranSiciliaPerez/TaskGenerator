@@ -1,0 +1,23 @@
+img{
+    width: 95px;
+}
+
+h1{
+    text-align: center;
+    display:inline;
+}
+
+#tarea{
+    margin-right: 15px;
+}
+
+#perfil{
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width: 400px) {
+    img{
+        width: 65px;
+    }
+}

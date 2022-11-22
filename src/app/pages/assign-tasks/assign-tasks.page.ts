@@ -10,6 +10,7 @@ import { AssignTaskDetailComponent } from '../assign-tasks/assign-tasks-details/
   styleUrls: ['./assign-tasks.page.scss'],
 })
 export class AssignTasksPage implements OnInit {
+assignement: any;
 
   constructor(
     private assignmentsSvc:AssignTasksService,
